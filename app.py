@@ -59,4 +59,4 @@ if __name__ == '__main__':
     message_sender_process = multiprocessing.Process(target=message_sender, args=(message_queue,))
     message_sender_process.start()
 
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
